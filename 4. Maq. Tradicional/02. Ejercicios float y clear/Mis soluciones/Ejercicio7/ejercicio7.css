@@ -1,0 +1,53 @@
+
+ /* EXPLICACIÓN DEL CSS USADO: */
+
+  :root {
+    --color-header: #808080;    /* Color gris para cabecera y pie */
+    --color-footer: #808080;    /* Color gris para pie de página (igual que cabecera) */
+    --color-text: #ffffff;      /* Color blanco para textos */
+    --color-menu: #33b5e5;      /* Color azul para el menú lateral */
+  }
+
+  * {
+    box-sizing: border-box;     /* Incluye padding y borde dentro del ancho y alto */
+  }
+
+  .header,
+  .footer {
+    background-color: var(--color-header);  /* Fondo gris para cabecera y pie */
+    color: var(--color-text);                /* Texto blanco */
+    padding: 15px;                           /* Espaciado interno */
+  }
+
+  .column {
+    float: left;             /* Coloca las columnas una al lado de otra */
+    padding: 15px;           /* Espacio interno */
+  }
+
+  .clearfix::after {
+    content: "";             /* Pseudo-elemento vacío */
+    clear: both;             /* Limpia los floats anteriores */
+    display: table;          /* Hace que el contenedor englobe los flotantes */
+  }
+
+  .menu {
+    width: 25%;              /* Menú ocupa el 25% del ancho */
+  }
+
+  .content {
+    width: 75%;              /* Contenido principal ocupa el 75% del ancho */
+  }
+
+  .menu ul {
+    list-style-type: none;   /* Quita viñetas de la lista */
+    margin: 0;               /* Elimina margen */
+    padding: 0;              /* Elimina padding */
+  }
+
+  .menu li {
+    padding: 8px;                  /* Espaciado interno en cada elemento del menú */
+    margin-bottom: 8px;            /* Separación entre elementos */
+    background-color: var(--color-menu);  /* Fondo azul para menú */
+    color: var(--color-text);              /* Texto blanco */
+  }
+

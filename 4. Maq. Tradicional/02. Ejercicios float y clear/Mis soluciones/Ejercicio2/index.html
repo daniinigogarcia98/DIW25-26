@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="ejercicio2.css" />
+    <title>Ejercicio2</title>
+  </head>
+  <body>
+    <body>
+      <div class="clearfix">
+          <div class="div1">Div1</div>
+          <div class="div2">Div2</div>
+          <div class="div3">Div3</div>
+      </div>
+      <!-- Explicación -->
+       <!-- En este ejercicio, se utiliza la propiedad `float` en CSS para posicionar los elementos dentro del contenedor. Específicamente: 
+        - El elemento `div1` se alinea a la derecha usando `float: right`. 
+        - El elemento `div2` se alinea a la izquierda usando `float: left`.
+         - El elemento `div3` también se alinea a la izquierda (por defecto, ya que no tiene `float` aplicado). 
+         Cuando se usan elementos flotantes (`float`), el flujo del documento puede romperse, 
+         haciendo que los elementos contenedores (en este caso, el `div` con clase `clearfix`) no reconozcan la altura de los elementos flotantes.
+          Esto puede causar problemas de diseño, como que el contenedor colapse.
+           Para solucionar esto, se utiliza la técnica del **clearfix**. 
+           Esta técnica consiste en aplicar una clase (`clearfix`) que fuerza al contenedor a reconocer correctamente la altura de sus elementos hijos flotantes.
+            La propiedad `clear: both` se usa comúnmente dentro de esta técnica para asegurarse de que el siguiente contenido comience debajo de los elementos flotantes,
+             evitando que se superpongan o se solapen. En resumen: - `float: left` y `float: right` se usan para alinear elementos horizontalmente. - `clear: both` 
+             limpia los flotantes, evitando problemas de diseño. - La clase `clearfix` asegura que el contenedor abarque correctamente a sus elementos flotantes. --
+    </body>
+  </body>
+</html>

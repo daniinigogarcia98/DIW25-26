@@ -1,0 +1,39 @@
+:root {
+    --color-div1: #FFC0CB;
+    --color-div2: #01FFFF;
+    --color-div3: #FF7f50;
+    --color-div4: #F5F5DD;
+  }
+   * {
+      box-sizing: border-box;
+    }
+
+    .divs {
+      float: left;
+      width: 25%;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .div1 { 
+      background-color: var(--color-div1);
+    }
+
+    .div2 {
+      background-color: var(--color-div2);
+    }
+
+    .div3 {
+      background-color: var(--color-div3);
+    }
+
+    .div4 {
+      background-color: var(--color-div4);
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }

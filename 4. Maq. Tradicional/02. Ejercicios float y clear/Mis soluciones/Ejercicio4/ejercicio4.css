@@ -1,0 +1,28 @@
+:root {
+    --color-div1: #FFC0CB;
+    --color-div2: #01FFFF;
+    --color-texto: #FF7f50;
+  }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .texto {
+      background-color: coral;
+    }
+
+    .div1 {
+      float: right;
+      padding: 50px;
+      background-color: pink;
+      margin-left: 50px;
+    }
+
+    .div2 {
+      float: left;
+      padding: 5px;
+      background-color: aqua;
+    }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="ejercicio4.css" />
+    <title>Ejercicio4</title>
+  </head>
+  <body>
+    <div class="clearfix">
+      <div class="div1">Div1</div>
+      <div class="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum
+        possimus eius cum a hic excepturi molestias. Neque saepe fugit, placeat
+        dolor autem porro voluptatibus numquam iste reprehenderit molestias ea.
+      </div>
+      <div class="div2">Div2</div>
+    </div>
+
+    <div style="margin-top: 30px">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem corporis
+      perferendis eos facilis, commodi assumenda et sequi eligendi iure?
+      Officiis tempora labore id expedita asperiores aperiam sint doloribus
+      facere qui
+    </div>
+    <!-- Explicación -->
+    <!-- 
+  ✅ Explicación del comportamiento del diseño:
+
+  El motivo por el que el segundo bloque de contenido (el párrafo con margen superior) 
+  no se desplaza completamente hacia abajo, es porque el navegador está tomando como 
+  referencia el borde inferior del último elemento que forma parte del flujo normal del documento, 
+  que en este caso es el párrafo con fondo naranja (clase "texto").
+
+  ⚠️ Tanto Div1 como Div2 están flotando (float: left / float: right), por lo que 
+  el navegador los saca del flujo normal del documento. Esto significa que su altura 
+  ya no se tiene en cuenta para calcular la altura del contenedor padre.
+
+  🧱 Como resultado, el contenedor que los envuelve colapsa (su altura es cero), 
+  y el contenido que viene después (el párrafo inferior) se monta sobre el área 
+  donde visualmente están Div1 y Div2.
+
+  🧽 ¿Por qué no basta con usar "clear: both"?
+
+  Usar "clear: both" en el contenido que sigue (por ejemplo, en el párrafo inferior) 
+  puede hacer que ese contenido se sitúe debajo de los elementos flotantes, pero 
+  NO resuelve el problema del contenedor colapsado.
+
+  🚫 Esto significa que aunque el contenido se vea en su lugar, el diseño sigue 
+  estando mal estructurado, ya que el contenedor principal no encierra correctamente 
+  a sus elementos hijos flotantes.
+
+  ✅ Solución correcta: usar la clase "clearfix"
+
+  La técnica clearfix se aplica al contenedor de los elementos flotantes, añadiendo 
+  un pseudo-elemento invisible (::after) que actúa como "limpiador" de floats. 
+  Esto obliga al contenedor a comportarse como un bloque normal y ajustar su altura 
+  para incluir correctamente a Div1 y Div2.
+
+  Ejemplo de CSS para clearfix:
+  
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  ✅ Resultado:
+
+  - El contenedor ya no colapsa.
+  - El contenido posterior se sitúa correctamente debajo del contenedor.
+  - Ya NO es necesario aplicar "clear" al último párrafo ni añadir un div vacío solo para limpiar.
+
+-->
+  </body>
+</html>

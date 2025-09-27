@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+.contenedor-img {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.contenedor-img img {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.titulo-img {
+  text-align: center;
+  font-weight: bold;
+}
+
+#pie {
+  background-color: gray;
+  margin-top: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.derecha {
+  float: right;
+}
+
+.izquierda {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -1,0 +1,32 @@
+:root {
+  --color-nav: #333;
+  --color-texto: #fff;
+  --color-hover: #f00;
+}
+nav {
+  background-color: var(--color-nav);
+}
+
+nav a {
+  padding: 14px 18px;
+  color: var(--color-texto);
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--color-hover);
+}
+
+.izquierda {
+  float: left;
+}
+
+.derecha {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

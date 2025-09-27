@@ -1,0 +1,28 @@
+:root {
+    --color-div1: #FFC0CB;
+    --color-div2: #01FFFF;
+    --color-texto: #FF7f50;
+  }
+  
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+      .texto {
+      background-color: var(--color-texto);
+    }
+
+    .div1 {
+      float: right;
+      padding: 50px;
+      background-color: var(--color-div1);
+      margin-left: 50px;
+    }
+
+    .div2 {
+      float: left;
+      padding: 5px;
+      background-color: var(--color-div2);
+    }

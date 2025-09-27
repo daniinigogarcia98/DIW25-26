@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio6</title>
+  <link rel="stylesheet" href="ejercicio6.css">
+</head>
+
+<body>
+  <div class="clearfix">
+    <img src="https://picsum.photos/id/1025/600/400" alt="adorable-dog">
+    <div class="texto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cupiditate aperiam distinctio error exercitationem reiciendis tenetur, nostrum impedit ut necessitatibus, ipsa voluptates repudiandae perspiciatis amet adipisci nihil dignissimos tempore ab! Accusantium itaque culpa ratione maxime aliquam necessitatibus voluptatem atque, ea ab expedita voluptates voluptas magni vel rem accusamus explicabo tempora quisquam aperiam officia? Asperiores accusantium numquam adipisci suscipit facere consequatur.
+    </div>
+  </div>
+  <!-- Explicación -->
+   <!-- 
+      Este ejercicio muestra una imagen y un bloque de texto alineados horizontalmente.
+
+      Explicación de cómo funciona:
+
+      1. El contenedor principal tiene la clase "clearfix", que utiliza un pseudo-elemento (::after)
+         para "limpiar" el flujo flotante de la imagen. Esto asegura que el contenedor envuelva correctamente
+         tanto la imagen como el texto, ya que la imagen está flotando a la izquierda.
+
+      2. La imagen tiene un ancho del 20% y se flota a la izquierda con 'float: left',
+         lo que permite que el contenido de texto fluya a su lado derecho.
+
+      3. El bloque de texto está dentro de un `<div>` con clase "texto":
+         - Tiene un ancho del 80% para ocupar el espacio restante junto a la imagen.
+         - Tiene un 'overflow: hidden' que puede ayudar a contener cualquier contenido interno
+           y evitar que se desborde visualmente.
+         - Tiene un padding horizontal de 15px para que el texto no se pegue al borde.
+
+      4. El uso de 'box-sizing: border-box' en todos los elementos (*) asegura que padding y border
+         se incluyan dentro del ancho/alto especificado, evitando desbordamientos inesperados.
+
+      Resultado: Se crea una maquetación simple donde la imagen queda a la izquierda
+      y el texto fluye ordenadamente a la derecha, manteniéndose todo dentro del contenedor padre.
+    -->
+</body>
+
+</html>

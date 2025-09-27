@@ -1,0 +1,45 @@
+
+:root {
+    --color-div1: #FFC0CB;
+    --color-div2: #01FFFF;
+}
+
+
+.div1{
+    float: right;
+    background-color: var(--color-div1);
+    padding: 50px;
+}
+
+.div2{
+    float: left;
+    background-color: var(--color-div2);
+    padding: 50px;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.explanation{
+    background-color: #F5F5F5;
+    padding: 50px;
+    margin: 50px;
+}
+pre{
+    background-color: black;
+    color: #F5F5F5;
+} 
+.solutioncss{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: blue;
+    font-weight: bold;
+}
+.solutionHTML{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: red;
+    font-weight: bold;
+}
