@@ -1,23 +1,25 @@
 :root {
-    --color-div1: #FFC0CB;
-    --color-div2: #01FFFF;
-    --color-div3: #FF7f50;
-  }
-  
-  .div1{
-    float: right;
-    background-color: var(--color-div1);
-    padding: 50px;
-  }
-  
-  .div2{
-    float: left;
-    background-color: var(--color-div2);
-    padding: 50px;
-  }
-  
-  .div3{
-    float: left;
-    background-color: var(--color-div3);
-    padding: 50px;
-  }
+  --color-div1: #ffc0cb;
+  --color-div2: #01ffff;
+  --color-div3: #ff7f50;
+}
+* {
+  box-sizing: border-box;
+}
+.div1 {
+  float: right;
+  background-color: var(--color-div1);
+  padding: 50px;
+}
+
+.div2 {
+  float: left;
+  background-color: var(--color-div2);
+  padding: 50px;
+}
+
+.div3 {
+  float: left;
+  background-color: var(--color-div3);
+  padding: 50px;
+}

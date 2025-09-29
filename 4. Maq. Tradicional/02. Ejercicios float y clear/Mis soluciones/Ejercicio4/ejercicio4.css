@@ -1,28 +1,35 @@
 :root {
-    --color-div1: #FFC0CB;
-    --color-div2: #01FFFF;
-    --color-texto: #FF7f50;
-  }
+  --color-div1: #ffc0cb;
+  --color-div2: #01ffff;
+  --color-texto: #ff7f50;
+}
 
-    .clearfix::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
+* {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: ""; /* Asegura que el pseudo-elemento se renderice */
+  clear: both; /* Limpia flotados a izquierda y derecha */
+  display: table; /* Crea un nuevo contexto de formato de bloque */
+}
 
-    .texto {
-      background-color: coral;
-    }
+.clearfix {
+  display: flow-root; /* lo mismo que el hack clearfix */
+}
 
-    .div1 {
-      float: right;
-      padding: 50px;
-      background-color: pink;
-      margin-left: 50px;
-    }
+.texto {
+  background-color: coral;
+}
 
-    .div2 {
-      float: left;
-      padding: 5px;
-      background-color: aqua;
-    }
+.div1 {
+  float: right;
+  padding: 50px;
+  background-color: pink;
+  margin-left: 50px;
+}
+
+.div2 {
+  float: left;
+  padding: 5px;
+  background-color: aqua;
+}

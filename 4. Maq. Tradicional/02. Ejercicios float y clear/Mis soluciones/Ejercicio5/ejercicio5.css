@@ -1,39 +1,43 @@
 :root {
-    --color-div1: #FFC0CB;
-    --color-div2: #01FFFF;
-    --color-div3: #FF7f50;
-    --color-div4: #F5F5DD;
-  }
-   * {
-      box-sizing: border-box;
-    }
+  --color-div1: #ffc0cb;
+  --color-div2: #01ffff;
+  --color-div3: #ff7f50;
+  --color-div4: #f5f5dd;
+}
+* {
+  box-sizing: border-box;
+}
 
-    .divs {
-      float: left;
-      width: 25%;
-      padding: 20px;
-      text-align: center;
-      font-weight: bold;
-    }
+.divs {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
 
-    .div1 { 
-      background-color: var(--color-div1);
-    }
+.div1 {
+  background-color: var(--color-div1);
+}
 
-    .div2 {
-      background-color: var(--color-div2);
-    }
+.div2 {
+  background-color: var(--color-div2);
+}
 
-    .div3 {
-      background-color: var(--color-div3);
-    }
+.div3 {
+  background-color: var(--color-div3);
+}
 
-    .div4 {
-      background-color: var(--color-div4);
-    }
+.div4 {
+  background-color: var(--color-div4);
+}
 
-    .clearfix::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
+.clearfix::after {
+  content: ""; /* Asegura que el pseudo-elemento se renderice */
+  clear: both; /* Limpia flotados a izquierda y derecha */
+  display: table; /* Crea un nuevo contexto de formato de bloque */
+}
+
+.clearfix {
+  display: flow-root; /* lo mismo que el hack clearfix */
+}

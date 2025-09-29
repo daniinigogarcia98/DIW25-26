@@ -3,6 +3,9 @@
   --color-texto: #fff;
   --color-hover: #f00;
 }
+* {
+  box-sizing: border-box;
+}
 nav {
   background-color: var(--color-nav);
 }
@@ -26,7 +29,11 @@ nav a:hover {
 }
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+  content: ""; /* Asegura que el pseudo-elemento se renderice */
+  clear: both; /* Limpia flotados a izquierda y derecha */
+  display: table; /* Crea un nuevo contexto de formato de bloque */
+}
+
+.clearfix {
+  display: flow-root; /* lo mismo que el hack clearfix */
 }

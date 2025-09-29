@@ -25,9 +25,13 @@
   }
 
   .clearfix::after {
-    content: "";             /* Pseudo-elemento vacío */
-    clear: both;             /* Limpia los floats anteriores */
-    display: table;          /* Hace que el contenedor englobe los flotantes */
+    content: "";        /* Asegura que el pseudo-elemento se renderice */
+    clear: both;        /* Limpia flotados a izquierda y derecha */
+    display: table;     /* Crea un nuevo contexto de formato de bloque */
+  }
+  
+  .clearfix{
+    display: flow-root;  /* lo mismo que el hack clearfix */
   }
 
   .menu {
