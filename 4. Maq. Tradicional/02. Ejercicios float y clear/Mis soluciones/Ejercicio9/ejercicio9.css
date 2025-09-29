@@ -1,39 +1,42 @@
 :root {
-  --color-nav: #333;
-  --color-texto: #fff;
-  --color-hover: #f00;
+  /* Variables CSS para reutilizar colores */
+  --color-nav: #333;          /* Color de fondo del menú de navegación */
+  --color-texto: #fff;        /* Color del texto de los enlaces */
+  --color-hover: #f00;        /* Color de fondo al pasar el ratón sobre un enlace */
 }
+
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Incluye padding y border dentro del ancho y alto del elemento */
 }
+
 nav {
-  background-color: var(--color-nav);
+  background-color: var(--color-nav); /* Aplica el color de fondo al menú */
 }
 
 nav a {
-  padding: 14px 18px;
-  color: var(--color-texto);
-  text-decoration: none;
+  padding: 14px 18px;             /* Espaciado interno de los enlaces */
+  color: var(--color-texto);      /* Color del texto de los enlaces */
+  text-decoration: none;          /* Quita el subrayado */
 }
 
 nav a:hover {
-  background-color: var(--color-hover);
+  background-color: var(--color-hover); /* Cambia el fondo al pasar el cursor */
 }
 
 .izquierda {
-  float: left;
+  float: left; /* Flota los elementos hacia la izquierda */
 }
 
 .derecha {
-  float: right;
+  float: right; /* Flota el elemento hacia la derecha */
 }
 
 .clearfix::after {
-  content: ""; /* Asegura que el pseudo-elemento se renderice */
-  clear: both; /* Limpia flotados a izquierda y derecha */
-  display: table; /* Crea un nuevo contexto de formato de bloque */
+  content: "";        /* Genera un pseudo-elemento vacío */
+  clear: both;        /* Limpia los flotados (izquierda y derecha) */
+  display: table;     /* Hace que el pseudo-elemento actúe como un contenedor */
 }
 
 .clearfix {
-  display: flow-root; /* lo mismo que el hack clearfix */
+  display: flow-root; /* Alternativa moderna al clearfix para limpiar flotados */
 }

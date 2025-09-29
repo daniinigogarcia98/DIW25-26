@@ -2,38 +2,38 @@
   box-sizing: border-box;
 }
 .contenedor-img {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+  float: left; /* Alinea a la izquierda */
+  width: 33.33%; /* Cada imagen ocupa un tercio del ancho */
+  padding: 5px; /* Margen interno */
 }
 
 .contenedor-img img {
-  width: 100%;
+  width: 100%; /* Imagen se adapta al contenedor */
 }
 
 img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100%; /* Imagen se adapta al contenedor */
+  height: auto; /* Ajusta la altura a la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen al contenedor sin distorsionarse */
 }
 .titulo-img {
-  text-align: center;
-  font-weight: bold;
+  text-align: center; /* Alinea el texto centrado */
+  font-weight: bold; /* Estilo de fuente */
 }
 
 #pie {
   background-color: gray;
-  margin-top: 20px;
-  padding: 20px;
-  font-weight: bold;
+  margin-top: 20px; /* Margen superior */
+  padding: 20px; /* Margen interno */
+  font-weight: bold; /* Estilo de fuente */
 }
 
 .derecha {
-  float: right;
+  float: right; /* Alinea a la derecha */
 }
 
 .izquierda {
-  float: left;
+  float: left; /* Alinea a la izquierda */
 }
 
 .clearfix::after {
@@ -43,5 +43,5 @@ img {
 }
 
 .clearfix{
-  display: flow-root;  /* lo mismo que el hack clearfix */
+  display: flow-root;  /* Alternativa moderna a clearfix */
 }
