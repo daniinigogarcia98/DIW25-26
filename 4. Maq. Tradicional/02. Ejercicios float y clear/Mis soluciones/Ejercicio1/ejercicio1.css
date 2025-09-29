@@ -1,29 +1,28 @@
-
 :root {
-    --color-div1: #FFC0CB;
-    --color-div2: #01FFFF;
+  --color-div1: #ffc0cb;
+  --color-div2: #01ffff;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-.div1{
-    float: right;
-    background-color: var(--color-div1);
-    padding: 50px;
+.div1 {
+  float: right;
+  background-color: var(--color-div1);
+  padding: 50px;
 }
 
-.div2{
-    float: left;
-    background-color: var(--color-div2);
-    padding: 50px;
+.div2 {
+  float: left;
+  background-color: var(--color-div2);
+  padding: 50px;
 }
 .clearfix::after {
-    content: "";        /* Asegura que el pseudo-elemento se renderice */
-    clear: both;        /* Limpia flotados a izquierda y derecha */
-    display: table;     /* Crea un nuevo contexto de formato de bloque */
-  }
-  
-  .clearfix{
-    display: flow-root;  /* lo mismo que el hack clearfix */
-  }
+  content: ""; /* Asegura que el pseudo-elemento se renderice */
+  clear: both; /* Limpia flotados a izquierda y derecha */
+  display: table; /* Crea un nuevo contexto de formato de bloque */
+}
+
+.clearfix {
+  display: flow-root; /* lo mismo que el hack clearfix */
+}
