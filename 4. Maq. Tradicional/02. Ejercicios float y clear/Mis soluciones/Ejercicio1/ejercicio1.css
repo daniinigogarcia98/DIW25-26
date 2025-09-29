@@ -21,25 +21,3 @@
     clear: both;
     display: table;
 }
-
-.explanation{
-    background-color: #F5F5F5;
-    padding: 50px;
-    margin: 50px;
-}
-pre{
-    background-color: black;
-    color: #F5F5F5;
-} 
-.solutioncss{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    color: blue;
-    font-weight: bold;
-}
-.solutionHTML{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    color: red;
-    font-weight: bold;
-}
