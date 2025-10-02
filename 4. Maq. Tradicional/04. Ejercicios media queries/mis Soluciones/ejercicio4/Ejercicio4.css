@@ -2,11 +2,11 @@
   box-sizing: border-box;
 }
 
-.topnav {
+.nav {
   background-color: #333;
 }
 
-.topnav a {
+.nav a {
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -14,17 +14,17 @@
   text-decoration: none;
 }
 
-.topnav a:hover {
+.nav a:hover {
   background-color: #f00;
   color: white;
 }
 
 @media (min-width: 600px) {
-  .topnav {
-    overflow: hidden;
+  .nav {
+    display: flow-root;
   }
 
-  .topnav a {
+  .nav a {
     float: left;
   }
 }
