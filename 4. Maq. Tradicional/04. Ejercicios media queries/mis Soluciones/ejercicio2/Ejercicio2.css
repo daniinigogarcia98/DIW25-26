@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+.ocultar {
+  padding: 10px;
+  background-color: yellow;
+  border: 2px solid red;
+}
+
+@media (min-width: 600px) {
+  .ocultar {
+    visibility: hidden;
+  }
+}
