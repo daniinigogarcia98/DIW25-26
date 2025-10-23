@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicios Flex (I). Código</title>
+  <title>Ejercicios Flex (XVI). Código</title>
   <style>
     main {
       height: 200px;
       background-color: #c3c3c3;
       display: flex;
-      flex-direction: row-reverse;
+      justify-content: center;
     }
 
     main div {
@@ -19,14 +19,22 @@
     }
 
     main .rojo {
+      display:flex;
+      flex-basis: 100%;
       background-color: red;
     }
 
     main .verde {
+      display:flex;
+      flex-basis: 250%;
+      align-self:center;
       background-color: green;
     }
 
     main .azul {
+      display:flex;
+      flex-basis: 100%;
+      align-self:flex-end;
       background-color: blue;
     }
   </style>
