@@ -1,0 +1,17 @@
+#container {
+  display: flex;
+  align-items: flex-start;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 200px;
+}
+
+.div-texto {
+  padding: 0px 15px;
+  background-color: lightblue;
+}

@@ -1,0 +1,15 @@
+#container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.div1 {
+  padding: 50px;
+  background-color: pink;
+}
+
+.div2 {
+  padding: 50px;
+  background-color: aqua;
+}
