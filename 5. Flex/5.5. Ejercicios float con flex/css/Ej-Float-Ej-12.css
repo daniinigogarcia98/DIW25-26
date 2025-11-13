@@ -105,6 +105,5 @@ main {
 main > * {
   /* Este height claramente, está para dar altura a los elementos si no tienen contenido */
   min-height: 300px;
-  flex-grow: 1;
-  flex-basis: 0%;
+  flex: 1 0;
 }
