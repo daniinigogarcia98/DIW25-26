@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ej2.css">
+  <title>ej2-grid</title>
+</head>
+<body>
+  
+   <div class="container">
+
+    <div id="grid-container" class="ej2">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+    </div>
+  </div>
+<!-- .container > *
+Es un selector de CSS (no de HTML ni de JavaScript).
+​
+
+.container selecciona cualquier elemento que tenga la clase container.
+​
+
+> es el combinador de hijo directo: selecciona solo los hijos inmediatos del elemento .container.
+​
+
+* es el selector universal, significa “cualquier etiqueta”.
+​
+
+Por tanto, .container > * { background-color: salmon; } aplica background-color: salmon a todos los hijos directos de un elemento con clase container.
+​
+
+display: grid
+Es una propiedad de CSS que define el tipo de caja de un elemento.
+​
+
+Al poner display: grid; en #grid-container conviertes ese elemento en contenedor de grid, y todos sus hijos pasan a ser items de grid que se colocan en filas y columnas.
+​
+
+grid-template-rows: 1fr y grid-template-columns: 1fr auto 100px
+Son propiedades de CSS Grid que definen el tamaño de las filas y columnas del contenedor.
+​
+
+grid-template-rows: 1fr
+Crea 1 fila.
+
+1fr es una unidad de tipo fracción de espacio disponible dentro del grid; ocupa todo el espacio vertical disponible (en este caso, una única fila que se estira).
+​
+
+grid-template-columns: 1fr auto 100px
+Crea 3 columnas en el grid.
+​
+
+1fr: primera columna ocupa una fracción del espacio restante del contenedor.
+​
+
+auto: segunda columna se ajusta al contenido; toma el espacio que necesite su contenido.
+​
+
+100px: tercera columna tiene ancho fijo de 100 píxeles.
+​
+
+En resumen: es un contenedor de tipo CSS Grid, con 1 fila flexible y 3 columnas (una flexible, una según contenido y una fija) y un selector .container > * que estiliza todos los hijos directos de .container. -->
+</body>
+</html>

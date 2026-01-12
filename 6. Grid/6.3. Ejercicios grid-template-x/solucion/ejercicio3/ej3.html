@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ej3.css">
+  <title>ej3-grid</title>
+</head>
+<body>
+  
+   <div class="container">
+
+    <div id="grid-container" class="ej3">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+    </div>
+  </div>
+<!-- Qué hace cada parte
+.container > * { background-color: salmon; }
+Aplica fondo color salmón a todos los hijos directos de .container, en este caso al div#grid-container completo.
+​
+
+.ej3 { display: grid; grid-template-rows: auto; grid-template-columns: 1fr 2fr 100px; }
+Convierte #grid-container en un contenedor de grid y crea 3 columnas:
+
+1ª columna: 1fr (ocupa una parte flexible del espacio).
+
+2ª columna: 2fr (el doble que la primera).
+
+3ª columna: 100px fijos de ancho.
+​
+Las filas se crean automáticamente con altura según el contenido (auto).
+​
+
+.item { border:1px solid black; padding:20px; }
+Cada celda numerada del 1 al 18 es un item de grid, con borde negro y padding, colocados uno tras otro ocupando las celdas de la rejilla por orden (1,2,3 en la primera fila; 4,5,6 en la segunda, etc.).
+​
+
+Qué tipo de grid es
+Es una CSS Grid explícita en columnas y automática en filas:
+
+Columnas definidas con grid-template-columns usando unidades fr y px.
+
+Filas generadas automáticamente con grid-auto-rows: auto implícito.
+​
+
+Es un grid de 3 columnas donde los elementos se colocan por flujo normal, sin áreas nombradas ni posicionamiento manual. -->
+</body>
+</html>

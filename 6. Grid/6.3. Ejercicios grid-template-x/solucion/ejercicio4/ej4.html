@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ej4.css">
+  <title>ej4-grid</title>
+</head>
+<body>
+  
+   <div class="container">
+
+    <div id="grid-container" class="ej4">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+    </div>
+  </div>
+<!-- Qué hace el código
+.ej4 { display: grid; } convierte el div con id grid-container en un contenedor de grid, así que todos sus hijos .item se convierten en “grid items”.
+​
+
+.container > * { background-color: salmon; } pone fondo color salmón a todos los elementos que cuelgan directamente de .container, en este caso el grid.
+​
+
+.item { border: 1px solid black; padding: 10px; } solo da estilo visual a las celdas (borde y relleno), no afecta al layout de grid.
+​
+
+Tipo de grid
+Es un grid explícito porque defines las pistas (tracks) con grid-template-rows y grid-template-columns.
+​
+
+Tienes:
+
+grid-template-rows: 100px; → una única fila explícita de altura fija 100 px.
+​
+
+grid-template-columns: 1fr repeat(2, 50px); → tres columnas:
+
+1.ª: flexible (ocupa el espacio restante) con 1fr.
+
+2.ª y 3.ª: fijas de 50 px cada una, definidas con repeat(2, 50px).
+​
+
+Cómo se colocan los items
+Hay 18 .item, pero solo defines una fila de grid; al no haber más filas explícitas, el motor de grid las va creando implícitamente para que quepan todos los elementos.
+​
+
+Los ítems se colocan en orden de documento, de izquierda a derecha y de arriba abajo, usando la estrategia de auto-placement por defecto.
+​
+
+En resumen: es un grid explícito de 1 fila × 3 columnas (1 flexible + 2 fijas), que genera filas implícitas adicionales para acomodar los 18 elementos.
+ -->
+</body>
+</html>

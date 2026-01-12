@@ -1,0 +1,12 @@
+.container > * {
+    background-color: salmon;
+  }
+  .ej5  {
+     display:grid;
+     grid-template-rows: auto 1fr;
+     grid-template-columns: 100px repeat(2, 1fr 50px) auto; 
+  }
+  .item{
+     border:1px solid black;
+     padding:10px;
+  }

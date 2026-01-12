@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ej1.css">
+  <title>Ej1-Grid</title>
+</head>
+<body>
+  
+   <div class="container">
+
+    <div id="grid-container" class="ej1">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+    </div>
+  </div>
+<!-- Ese código convierte #grid-container en un grid de 2 filas y 3 columnas, con tamaños fijos en las dos primeras filas/columnas y la última columna ocupando todo el espacio restante.
+​
+
+Qué hace cada regla
+display: grid;
+Hace que #grid-container sea un contenedor de grid; todos los .item pasan a ser ítems del grid.
+​
+
+grid-template-rows: 50px 100px;
+Define exactamente 2 filas en la cuadrícula:
+
+Fila 1: 50px de alto
+
+Fila 2: 100px de alto
+Si hay más ítems de los que caben en esas 2 filas × 3 columnas, el navegador crea filas adicionales con altura automática.
+​
+
+grid-template-columns: 100px 200px auto;
+Define 3 columnas:
+
+Columna 1: 100px de ancho
+
+Columna 2: 200px de ancho
+
+Columna 3: auto → ocupa el espacio horizontal que quede libre en el contenedor.
+​
+
+.container > * { background-color: salmon; }
+Todo hijo directo de .container tiene fondo color salmón, así que el área del grid se ve de ese color.
+​
+
+.item { border:1px solid black; padding:20px; }
+Cada celda (1, 2, 3, … 18) tiene borde y relleno para que se vean como cajas separadas.
+​
+
+Qué tipo de grid es
+Es un grid explícito de 2 filas y 3 columnas, porque usas grid-template-rows y grid-template-columns con valores concretos.
+​
+
+No usa grid-template-areas, ni repeat(), ni fracciones (fr), ni posicionamiento manual (grid-row, grid-column), así que es un ejemplo básico de grid con tamaños fijos y una columna flexible.
+​ -->
+</body>
+</html>
