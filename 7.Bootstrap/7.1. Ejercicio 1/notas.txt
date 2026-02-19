@@ -1,0 +1,57 @@
+Características clave:
+--seccion 2--
+Grid responsive:
+col-md-6: 2 columnas en tablets
+col-lg-4: 3 columnas en desktop
+1 columna en móvil automáticamente
+Tarjetas:
+h-100: Todas tienen la misma altura
+border-0 shadow-sm: Sin borde, con sombra suave
+text-center p-4: Contenido centrado con padding
+Iconos circulares:
+Fondo semitransparente con bg-opacity-10
+Círculo de 80x80px
+Iconos de Bootstrap Icons
+Espaciado: g-4 en el row para gaps entre tarjetas
+--seccion 3---
+1. El Contenedor Principal (<section>)
+py-5: Significa Padding Y (relleno vertical) nivel 5. Agrega mucho espacio arriba y abajo de la sección para que no se vea apretada.
+bg-dark: Significa Background Dark. Pone el fondo de color negro o gris muy oscuro automáticamente.
+2. La Estructura de Rejilla (Grid System)
+Bootstrap divide la pantalla en 12 columnas imaginarias.
+container: Centra el contenido en la pantalla y le da márgenes a los lados para que no toque los bordes del navegador.
+row: Crea una fila horizontal para agrupar las columnas.
+g-4: Significa Gutter (canal) nivel 4. Agrega espacio (separación) entre las columnas para que los números no estén pegados entre sí.
+text-center: Alinea todo el texto de esta fila al centro.
+3. Las Columnas (Lo más importante)
+Cada bloque de estadística tiene la clase: col-6 col-md-3. Esto es Diseño Responsivo:
+col-6 (Móviles): En pantallas pequeñas (celulares), esta columna ocupa 6 de las 12 partes disponibles (el 50% del ancho).
+Resultado: En el celular verás 2 números por fila (uno al lado del otro).
+col-md-3 (Tablets y PC): A partir del tamaño "Medium" (md), la columna ocupa 3 de las 12 partes (el 25% del ancho).
+Resultado: En la computadora verás 4 números en una sola fila.
+4. Tipografía y Colores
+Dentro de cada columna hay un título (h2) y un párrafo (p):
+Para el número (h2):
+display-4: Una clase de Bootstrap para hacer el texto muy grande (título de exhibición).
+fw-bold: Font Weight Bold. Pone el texto en negrita gruesa.
+mb-2: Margin Bottom nivel 2. Agrega un pequeño espacio debajo del número para separarlo del texto de abajo.
+text-primary, text-success, text-warning, text-info: Son los colores semánticos de Bootstrap:
+primary: Azul.
+success: Verde.
+warning: Amarillo/Naranja.
+info: Celeste.
+Para la descripción (p):
+text-light: Pone el texto de color blanco o gris muy claro (para que se lea bien sobre el fondo bg-dark).
+mb-0: Margin Bottom 0. Elimina el margen inferior para que el texto quede pegado al borde inferior de su caja.
+Resumen Visual
+Si copias y pegas esto en un proyecto con Bootstrap instalado, verás algo así:
+500+ (Azul)
+98% (Verde)
+50+ (Amarillo)
+24/7 (Celeste)
+Lorem Ipsum
+Dolor Sit Amet
+Consectetur
+Adipiscing Elit
+(En un celular, la tabla se rompería en dos filas de dos elementos).
+--seccion4--
