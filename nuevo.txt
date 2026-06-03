@@ -103,3 +103,71 @@
         grid-column: 1;
     }
 }
+---------------------
+
+
+        /* =========================================
+           EJERCICIO 1.1
+           ========================================= */
+        .ejercicio-1-1 {
+            display: flex;
+            /* Por defecto los elementos se ponen en fila */
+        }
+
+        .ejercicio-1-1 .item-3 {
+            background-color: #a8d8ea; /* Azul */
+            /* order: 1 lo pone el primero visualmente */
+            order: 1; 
+            flex-basis: 20%; /* Ocupa un 20% aprox */
+        }
+
+        .ejercicio-1-1 .item-2 {
+            background-color: #aaeeaa; /* Verde */
+            /* order: 2 lo pone en medio */
+            order: 2;
+            /* flex-grow: 1 hace que ocupe todo el espacio sobrante */
+            flex-grow: 1; 
+        }
+
+        .ejercicio-1-1 .item-1 {
+            background-color: #ff9999; /* Rojo */
+            /* order: 3 lo pone el último visualmente */
+            order: 3;
+            flex-basis: 10%; /* Ocupa un 10% aprox */
+        }
+
+        /* =========================================
+           EJERCICIO 1.2
+           ========================================= */
+        .ejercicio-1-2 {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los elementos bajen de línea */
+            align-items: flex-start; /* Alineación superior por defecto */
+        }
+
+        .ejercicio-1-2 .item-2 {
+            background-color: #aaeeaa; /* Verde */
+            flex: 1 1 300px; /* Crece y se encoge, base de 300px */
+            order: 1;
+        }
+
+        .ejercicio-1-2 .item-3 {
+            background-color: #a8d8ea; /* Azul */
+            flex: 0 1 200px; /* No crece, se encoge, base 200px */
+            height: 200px; /* Altura fija para el ejemplo */
+            order: 2;
+        }
+
+        .ejercicio-1-2 .item-1 {
+            background-color: #ff9999; /* Rojo */
+            order: 3;
+            
+            /* TRUCO FLEXBOX: 
+               margin-left: auto empuja el elemento a la derecha.
+               margin-top: auto empuja el elemento hacia abajo (al final del contenedor).
+            */
+            margin-left: auto;
+            margin-top: auto;
+        }
+
+    
